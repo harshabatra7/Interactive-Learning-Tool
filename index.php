@@ -116,7 +116,7 @@ button {
 	</style>
 	 <div class="container">
         <div class="login-container">
-            <h1>Student Login</h1>
+            <h1>Admin Login</h1>
             <form action="logindb.php" class="form-login" method="post">
                 <div class="textfield">
                     <label for="email"> <b>E-mail</b></label>
