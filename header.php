@@ -1,6 +1,7 @@
 <?php
 session_start();
 $sessionname = $_SESSION['name'];
+$sessionid = $_SESSION['id'];
 if($sessionname=="")
 {
   echo "<script>
@@ -10,6 +11,8 @@ window.location.href='index.php';
 }
 $sessionemail = $_SESSION['email'];
 $sessiondept = $_SESSION['dept'];
+$sessionyear = $_SESSION['year'];
+$sessionsec = $_SESSION['sec'];
 ?>
 
 
@@ -119,67 +122,46 @@ $sessiondept = $_SESSION['dept'];
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="manageassignment.php" class="nav-link">
+                <a href="viewassignment.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Manage Assignment</p>
+                  <p>View Assignment</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="addassignment.php" class="nav-link">
+                <a href="submittedassignment.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Add Assignment</p>
+                  <p>Submitted Assignment</p>
                 </a>
               </li>
             </ul>
           </li>
 
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="viewnotes.php" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
-                Notes
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="managenotes.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Manage Notes</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="addnotes.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Add Notes</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-
-
-          <li class="nav-item">
-            <a href="viewstudent.php" class="nav-link">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                View Student
+                View Notes
                 
               </p>
             </a>
             
           </li>
 
-
           <li class="nav-item">
-            <a href="sentmessage.php" class="nav-link">
+            <a href="viewmessage.php" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
-                Sent Message
+                View Messages
                 
               </p>
             </a>
             
           </li>
+
+          
+
+
+          
           
           
           

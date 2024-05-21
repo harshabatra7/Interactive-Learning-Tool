@@ -2,5 +2,4 @@
 
 include '../db.php';
 
-
 ?>
